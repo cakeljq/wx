@@ -1,0 +1,40 @@
+<!--pages/fenlei/fenlei.wxml-->
+<!--标题轮播-->
+<view class="scrool-left">
+<scroll-view scroll-x="true" style="white-space: nowrap; display: block" class="showmian">
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">蛋糕</view> 
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">面包</view> 
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">下午茶</view> 
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">冰淇淋</view> 
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">常温蛋糕</view> 
+  <view bindtap="chooseItem" class="w20 hovertxt" data-index="{{index}}">设计师礼品</view> 
+</scroll-view>
+</view>
+<!--导航变换-->
+<view class="pro-list-title">
+  <view class="title-max">
+      <text>冰淇淋</text>
+      <view class="title-small">
+        <text>10天生命的意式杰拉朵冰淇淋</text>
+      </view>
+    </view>
+</view>
+<!--商品列表-->
+<view class="index-nav">
+  <block wx:for="{{list}}" wx:key="item.id">
+  <view class="nav-item">
+    <image src="{{item.img_url}}" mode="aspectFill" lazy-load bindtap="handleJumpDangao" data-id="{{item.id}}"></image>
+    <text>{{item.etitle}}</text>
+    <text>{{item.ztitle}}</text>
+    <view class="nav-price">
+       ￥{{item.price}}
+    </view>
+    <view class='img_biao'>
+      <image src="{{item.img_biao}}"></image>
+    </view>
+    <view class="nav-card">
+      <image src="http://127.0.0.1:3000/img/list-cart .png"></image>
+    </view>
+  </view>
+  </block>
+</view>

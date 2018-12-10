@@ -1,0 +1,40 @@
+<view class="detail-img">
+   <view class="detail-list">
+      <image src="http://127.0.0.1:3000/img/price13.jpg"></image>
+   </view>
+<!--分割块-->
+   <view class="divider"></view>
+</view>
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="etitle">Black and White Chocolate Mousse</text>
+    <text class="ztitle">黑白巧克力慕斯</text>
+    <text class="price">￥500</text>
+  </view>
+  <!-- sku选择 -->
+  <view class="detail-item">
+    <view class="xueze">
+      <text bindtap="toggleDialog">已选择:</text>
+      <view></view>
+    </view>
+      <view class="text-gui">
+        <text>规格：16x16cm</text>
+        <text>含十套餐具</text>
+        <text>适合7-8人分享</text>
+        <text>最早明天 09:30配送</text>
+        <text>口感冰凉细腻，白巧克力慕斯的甜，与底部黑巧克力酱的苦/</text>
+      </view>
+  </view>
+  <view class="item-img">
+    <view class="divider"></view>
+    <image src="http://127.0.0.1:3000/img/details02.jpg"></image>
+    <image src="http://127.0.0.1:3000/img/details02.jpg"></image>
+    <image src="http://127.0.0.1:3000/img/details02.jpg"></image>
+  </view>
+  
+</scroll-view>
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+  <button class="button-green" bindtap="addCar" formType="submit">加入购物车</button>
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+</view>

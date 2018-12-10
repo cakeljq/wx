@@ -1,0 +1,91 @@
+/* pages/home/home.wxss */
+.slider,.slider swiper,.slider image{
+  height:390rpx;
+  width:100%;
+}
+
+/*功能二:九宫格*/
+/*1:父元素弹性布局*/
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+/*2:子元素弹性布局 image/text*/
+.index-nav .nav-item{
+  height:200rpx;
+  width:33.33333%;
+  box-sizing: border-box;
+  /*border:1rpx solid #ddd;*/
+  /*item子元素弹性布局*/
+  display: flex;
+  flex-direction: column;   /*子元素按列布局*/
+  justify-content: center;  /*水平居中 垂直居中*/
+  align-items: center;
+  /*小程序:推荐使用字体大小使用 px*/
+  font-size:12px;
+  color:#442818;
+  /*右侧添加边框 底部添加边框*/
+  border-right:1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+.index-nav .nav-item:nth-child(3),.nav-item:nth-child(6),{
+  border-right:0  none;
+}
+/*3:修改图片宽度高度*/
+.index-nav image{
+  width:150rpx;
+  height:100rpx;
+  margin-bottom:10rpx;
+}
+
+/*添加灰色分割块 home.wxss*/
+/*多个组件都要使用分割块 app.wxss*/
+.divider{
+  height:15rpx;
+  background-color: #f1f1f1;
+}
+.title-goods{
+  color: #322418;
+    display: inline-block;
+    height: 40rpx;
+    font-size: 13px;
+    background: #F4EBE2;
+    border-radius: 200rpx;
+    padding: 0 20rpx;
+    line-height: 40rpx;
+    margin-left:20rpx;
+}
+.content{
+  border-top: 1px solid #E5E5E5;
+  width:100%;
+ 
+}
+.title-list{
+    background: #FFF;
+    box-shadow: 0 8rpx 24rpx 0 rgba(0,0,0,0.06);
+    border-radius: 10rpx;
+    overflow: hidden;
+    padding-left: 45rpx;
+    padding-top: 50rpx;
+  
+}
+  .title-list image{
+    width:666rpx;
+    height:355.84rpx;
+  }
+  .title-list text{
+      font-size: 16px;
+      font-weight:blod;
+      color: red;
+      overflow:hidden;
+  }
+  .text-nav text{
+    font-size:14px;
+    color:#442818;
+  }
+  .image-card image{
+     width:100rpx;
+     height:100rpx;
+     padding-right:50rpx;
+    
+  }
